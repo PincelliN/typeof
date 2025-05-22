@@ -1,7 +1,7 @@
 type ReadPermission = "read" | "no-read";
-type WrtitePermission = "write" | "no-write";
+type WritePermission = "write" | "no-write";
 
-type FilePermission = `${ReadPermission}-${WrtitePermission}`;
+type FilePermission = `${ReadPermission}-${WritePermission}`;
 
 type DataFile = {
   data: string;
